@@ -10,7 +10,7 @@ Artificial Intelligence is a contrast to Human Intelligence.
 
 ### **What is Artificial Intelligence?**
 
-Artificial Intelligence suggest that machines can mimic humans in:
+Artificial Intelligence suggests that machines can mimic humans in:
 
 * Talking
 * Thinking
@@ -38,9 +38,7 @@ One of the greatest innovators in the field of machine learning was John McCarth
 
 In the mid 1950s, McCarthy coined the term "Artificial Intelligence" and defined it as "the science of making intelligent machines".
 
-The algorithms has been here since then. Why is AI more interesting now?
-
-The answer is:
+The algorithms has been here since then. AI is more interesting now because:
 
 * Computing power has not been strong enough
 * Computer storage has not been large enough
