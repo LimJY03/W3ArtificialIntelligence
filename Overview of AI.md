@@ -1,4 +1,4 @@
-# **W3ArtificialIntelligence**
+# **Overview of Artificial Intelligence (AI)**
 
 This is a notebook about AI using javascript with the reference of the AI course on [w3schools.com](https://www.w3schools.com/)
 
