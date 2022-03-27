@@ -709,6 +709,118 @@ Statement from FDA Commissioner Scott Gottlieb, M.D. on steps towards a new, tai
 
 ---
 
+## **09. Theory of Mind**
+
+> The human mind can process:
+> 
+> * Thoughts
+> * Feelings
+> * Emotions
+> * Self Awareness
+> * Empathy
+
+### **What is Mind**
+
+There is **no** proven definition of "Mind".
+
+Mind can be defined as an instantiation of intelligence, or as a collection of knowledge.
+
+> Is the **Mind** just a big computer?
+
+### **Cognitive Science**
+
+Cognitive science is the study of **mind processes**.
+
+A cognitive scientist studies intelligence and behavior.
+
+Cognitive science focus on how brain cells process and transform information.
+
+Cognitive Science also tries to learn how to develop intelligent computer algorithms.
+
+> Cognitive Science links the 6 elements together:
+> 
+> 1. Philosophy
+> 2. Psychology
+> 3. Linguistic
+> 4. Anthropology
+> 5. Neuroscience
+> 6. Artificial Intelligence
+
+### **The Mental Model**
+
+A mental model is an internal picture of the external reality.
+
+Scientists expects that a model plays a major role in reasoning and decision-making (cognition).
+
+Kenneth Craik suggested in 1943 that the mind constructs "small-scale models" of reality when trying to anticipate events.
+
+> *The image of the world around us, which we carry in our head, is just a model. Nobody in his head imagines all the world, government or country. He has only selected concepts, and relationships between them, and uses those to represent the real system.*
+> 
+> Jay Wright Forrester, 1971.
+
+### **Can AI be Human?**
+
+Scientists are trying to discover what separates human intelligence from artificial intelligence.
+
+What is the status? What is the future?
+
+* Year 2000: **Reactive Machines**
+* Year 2015: **Machine Learning**
+* Year 2030: **Theory of Mind**
+* Year 2050: **Self-Awareness**
+
+> **01. REACTIVE MACHINES**
+> 
+> Early AI systems were reactive. Reactive systems cannot use past experience.
+> 
+> In 1997 a reactive machine ("IBM Deep Blue") beat the world champion in chess.
+> 
+> "Deep Blue" could not think. But it was stored with information about the chess board, and the rules for moving chess pieces.
+> 
+> "Deep Blue" won because it was programmed to calculate every move to win.
+> 
+> ![Deep Blue](https://www.w3schools.com/ai/img_chess.jpg)
+
+> **02. MACHINE LEARNING**
+> 
+> Today, AI systems can use some information from the past.
+> 
+> One example is self-driven cars. They can combine pre-programmed information with information they collect while they learn how to drive.
+
+> **03. THEORY OF MIND**
+> 
+> **Theory of Mind** is a term from psychology about an individual's capacity for empathy and understanding of others.
+> 
+> This is an awareness of others being like yourself, with individual needs and intentions.
+> 
+> One of the abilities language users have, is to communicate about things that are not concrete, like needs, ideas, or concepts.
+> 
+> Simon Baron-Cohen, British psychologist and professor at the University of Cambridge (1999), argues  that "Theory of Mind" must have preceded languages, based on knowledges about early human activities:
+> 
+> * Teaching
+> * Building Shared Goals
+> * Building Shared Plans
+> * Intentional Communication
+> * Intentional Sharing of Topic
+> * Intentional Sharing of Focus
+> * Intentional Persuasion
+> * Intentional Pretending
+> * Intentional Deception
+
+> **04. SELF AWARENESS**
+> 
+> In psychology, "Theory of Mind" means that people have thoughts, feelings and emotions that affect their behavior.
+> 
+> Future AI systems must learn to understand that everyone (both people and AI objects) have thoughts and feelings.
+> 
+> They must know how to adjust their behavior to be able to walk among us.
+>
+> The last step, before AI can be human, is machine consciousness.
+> 
+> We cannot construct this software before we know much more about the human brain, memory and intelligence.
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
