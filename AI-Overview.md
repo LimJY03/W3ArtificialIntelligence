@@ -369,7 +369,7 @@ Computers can handle an unlimited amount of numbers. But, humans can not.
 
 ---
 
-## **The History of Computing**
+## **05. The History of Computing**
 
 ### **The First Abacus**
 
@@ -470,6 +470,54 @@ In 2030, computers might have the capacity of a human brain:
 ![The Singularity is Near: When Humans Transcend Biology](https://www.w3schools.com/ai/img_speed.jpg)
 
 Source: [Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil)
+
+---
+
+## **06. Robots**
+
+### **Industrial Robots**
+
+Industrial robots have been around for more than 50 years.
+
+The first robot patent was applied for in 1954 and granted in 1961.
+
+In 1969, Victor Scheinman invented the **Stanford Arm** (Stanford University), and in 1972 he designed the **MIT Arm** for the MIT Artificial Intelligence Lab.
+
+![](https://www.w3schools.com/ai/img_mit_arm.jpg)
+
+These "robots" are not considered intelligent. They are electrical machines designed to permit 6-axis arm movement. But the new design allowed for a machine to follow a programmed path and opened up for "robot jobs" like car painting, welding and assembly.
+
+PUMA (Programmable Universal Machine for Assembly), a robot arm designed by Prof. Victor Scheinman and developed by Vicarm, Unimation with support from General Motors in 1978, was used in assembly lines and is still used by researchers today.
+
+**Most industrial robots are non-intelligent.**
+> 
+> Most modern robots are said to be autonomous or semi-autonomous because they do not require much human input after they have been programmed.
+> 
+> A robot can be easily programmed to do a lot of different things (like on an assembly line), but it will never change what it is doing. It will continue to do the same job until you turn it off.
+
+**Robots and Artificial Intelligence are two different things.**
+
+> Robot technology is not a subset of Artificial Intelligence.
+>
+> A robot is a physical thing. After 50 years of development, almost anything is programmable, your radio, your watch, your phone, and even robots.
+
+### **AI Robots**
+
+Artificial Intelligence can be built into robots, and AI is a very exciting field in future robotics.
+
+Hanson Robotics' Sophia personifies some dreams for the future of AI.
+
+Sophia is a combination of science, engineering, and artistry. She is a human-crafted science fiction character depicting the future of AI and robotics.
+
+![Sophia](https://www.w3schools.com/ai/img_sophiarobot.gif)
+
+### **Can AI Robots Interact Socially?**
+
+Yes, AI Robots can learn to interact socially.
+
+Kismet (a MIT robot) is programmed to understand body language and voice inflection. The creators study how human and babies interact, based on tone of speech and visual cue.
+
+Kismet could be the foundation of a human-like learning system.
 
 ---
 
