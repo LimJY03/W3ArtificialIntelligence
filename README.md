@@ -4,7 +4,7 @@ This is a notebook about AI using javascript with the reference of the AI course
 
 ---
 
-## **01 What is AI?**
+## **01. What is AI?**
 
 Artificial Intelligence is a contrast to Human Intelligence.
 
@@ -57,6 +57,91 @@ Another strong force is the major investments from big companies (Google, Micros
 * Do it all over again
 
 The fact that computers can do this millions of times, has proven that computers can take very intelligent decisions.
+
+---
+
+## **02. Human Intelligence**
+
+About 70 000 years ago, something happened to the human brain.
+
+Humans started to develop "Cognitive Intelligence":
+
+* Being able to understand a language
+* Being able to understand numbers
+* Being able to understand abstract thinking
+
+### **Words and Numbers**
+
+Using words, was a big step in the development of human intelligence:
+> "Elephant" is more informative than "Big Animal".
+
+Understanding numbers, was also a big step:
+> "5" or "50" is more informative than "few" or "many".
+
+### **Languages**
+
+Having a language is probably a key characteristic that distinguishes us from animals.
+> "There is a lion behind the big oak" is more informative than shouting "Danger!".
+
+### **Abstract Thinking**
+
+Abstract thinking is the thinking about things that are not concrete, like freedom, or ideas, or concepts.
+
+> **CONCRETE**
+> * Mouth
+> * Fingertip
+> * One apple
+> * Two chicken
+> * Three horses
+
+> **ABSTRACT**
+> * Freedom
+> * The past
+> * The future
+> * Imagination
+> * Explanation
+
+Many everyday behaviors use abstract thinking:
+
+* Using Concepts
+* Using Theories
+* Using Metaphors
+* Using Analogies
+* Using Imagination
+
+### **What is Intelligence?**
+
+There is no proven definition of Intelligence.
+
+Intelligence can be defined as:
+
+* Being able to understand abstract thinking
+* Being able to understand a language
+* Being able to understand numbers
+
+Intelligence can be defined as a collection of knowledge:
+
+> *"Intelligence could be defined as the process of obtaining knowledge by efficient means."*
+> 
+> Yampolsky (2013)
+
+The challenge of AI is to understand what intelligence is, and how intelligence works.
+
+Intelligence might be a type of algorithms in our brains or in our genes.
+
+### **Is the Human Brain Superior?**
+
+Can animals, birds, insects, or plants think?
+
+Humans have bigger brains than animals.
+
+Big dogs have bigger brains than small dogs. Are big dogs smarter?
+
+Birds have very small brains, but they know they should not make children in the autumn, and they know when to fly to the south.
+
+Bees have even smaller brains, but they know how to communicate about where to find nectar.
+
+Plants have no brain, but they know how to reproduce, and how to prepare for the winter.
 
 ---
 
