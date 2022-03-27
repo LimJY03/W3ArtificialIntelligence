@@ -206,6 +206,169 @@ The oldest written language still in use today, is Chinese (1500 BC - now).
 
 ---
 
+## **04. The History of Numbers**
+
+To understand AI, it is important to understand the concept of Numbers and Counting.
+
+### **AI is About Numbers**
+
+Artificial Intelligence is all about Numbers.
+
+Numbers are easy to understand: 1, 2, 3, 4, 5 ... 11, 12, 13, 14, 15.
+
+Studies of animals indicates that even animals can understand some numbers:
+
+* 2 Parents
+* 8 Childrens
+* 5 Eggs
+
+The need for numbers in the modern world is absolute. We cannot live without numbers:
+
+* 100 Dollar
+* Pi = 3.14
+* 365 Days
+* 25 Years
+* 20% Tax
+* 100 Miles
+
+### **AI is About Counting**
+
+The concept of numbers leads to the concept of counting.
+
+Imagine prehistoric thinking:
+
+* How to count apples?
+* How to weigh corn?
+* How to pay?
+* How far is the ocean?
+
+Artificial Intelligence is a result of the human need for calculations.
+
+Counting is easy to understand: 2 + 2 = 4.
+
+Studies of animals indicates that animals can only understand very simple counting.
+
+How do Homo Sapiens deal with calculations?
+
+Complex calculations are done by computers.
+> Computers can be smarter than humans. 
+
+### **Two Babylonian Scientists**
+
+About 6000 years ago, two Babylonian scientists were talking:
+
+> Scientist 1: "We need to invent a number system."
+>
+> Scientist 2: "What?"
+>
+> Scientist 1: "We need to give every number a name."
+>
+> Scientist 2: "You mean like 1, 2, and 3?"
+> 
+> Scientist 1: "Exactly!"
+>
+> Scientist 2: "But why?"
+> 
+> Scientist 1: "How can I tell you I have 7 sons, if you don't know what 7 is?"
+> 
+> Scientist 2: "Every number should have a name?"
+>
+> Scientist 1: "Exactly!"
+>
+> Scientist 2: "So, how many numbers do we need? 15?"
+>
+> Scientist 1: "More. Some people have more than 15 sons."
+>
+> Scientist 2: "Ok. 30 then. Just to be sure."
+> 
+> Scientist 1: "But people older than 30 should be able to tell their age."
+> 
+> Scientist 2: "Ok. 60 then."
+
+### **Babylonian Numbers (Base 60)**
+
+We believe that the Babylonians started the development of complex counting.
+
+![Babylonian Numerals](https://www.w3schools.com/ai/img_babylonian_numerals.jpg)
+
+The Babylonian number system has 60 different digits. It is a Base 60 system:
+
+> 1, 5 means 1 * 60 + 5 * 1 = 65
+> 
+> 3, 30 means 3 * 60 + 30 * 1 = 210
+
+The Babylonians had a place-value system, where the digits to in the left represented full values, much like our decimal system.
+
+The reason why the Babylonians used 60 as the base, was (we like to believe) that 60 is divisible with most numbers: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30 and 60.
+
+The downside was that the user had to remember 60 different digits. But the system was smart. A lot of it is still in use today:
+> 1 hour: 1 * 60 = 60 minutes
+
+### **Sexagesimal (Base 60)**
+
+The origin of the **Sexagesimal system (base 60)** has been lost in history.
+
+But surely, it looks like it has been used in parallel with the **Dozenal system (Base 12)** since ancient times.
+
+The sexagesimal system (base 60):
+
+* There are 60 seconds in one minute
+* There are 60 minutes in one hour
+
+60 is very versatile. It can be divided by 1, 2, 3, 4, 5, 6, 10, 12, 15, 30 and 60.
+
+### **Dozenal (Base 12)**
+
+The dozenal system (base 12):
+
+* There are 12 in a dozen
+* There are 12 hours in a day
+* There are 12 hours in a night
+* There are 12 months in a year
+
+12 is very versatile. It can be divided by 1, 2, 3, 4, 6 and 12.
+
+### **Roman Numbers (Base 10)**
+
+Roman numbers originated in Rome and was used in Europe into the Middle Ages.
+
+> `I` -> 1
+> 
+> `V` -> 5
+> 
+> `X` -> 10
+> 
+> `L` -> 50
+> 
+> `C` -> 100
+> 
+> `D` -> 500
+> 
+> `M` -> 1000
+
+The Romans used a Base 10 system. Possibly because they used their 10 fingers to count.
+
+Today, most of the world use a Base 10 number system:
+> Western numbers, Chinese numbers, Brahmi numbers, Greek numbers, Hebrew numbers...
+
+### **Digital Numbers**
+
+Humans can count with base 10 numbers, computers can not.
+
+Electricity cannot count. Electricity can only be On and Off.
+
+Computers use Electricity or Magnetism to represent On and Off.
+
+> Computers use Digital Numbers like 11100110 (in contrast to Base 10 Numbers like 230).
+
+Digital numbers (11100110) are also called Binary Numbers.
+
+### **Computer vs. Human**
+
+Computers can handle an unlimited amount of numbers. But, humans can not.
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
