@@ -910,6 +910,41 @@ SQL is very convenient for storing, manipulating, and retrieving data in databas
 
 ---
 
+## **11. AI in the Browser**
+
+> Artificial Intelligence in the Browser means:
+> 
+> * AI in JavaScript
+> * AI for Everyone on The Web
+> * AI on More Platforms
+> * AI for a Wider Audience
+
+### **Math in the Browser**
+
+Math.js is an extensive math library for JavaScript and Node.js.
+
+Math.js is powerful and easy to use. It comes with a large set of built-in functions, a flexible expression parser, and solutions to work with many data types like numbers, big numbers, complex numbers, fractions, units, arrays, and matrices.
+
+### **Machine Learning in the Browser**
+
+Brain.js is a GPU accelerated neural networks in JavaScript for Browsers and Node.js.
+
+Brain.js is simple to use. You do not need to know neural networks in details to work with Brain.js.
+
+Brain.js provides multiple neural network implementations as different neural nets can be trained to do different things well.
+
+[[Learn More]](https://www.w3schools.com/ai/ai_brainjs.asp)
+
+### **Plotting in the Browser**
+
+Here is a list of some JavaScript libraries to use for both Artificial Intelligence graphs and other charts:
+
+* [`Plotly.js`](https://www.w3schools.com/ai/ai_plotly.asp)
+* [`Chart.js`](https://www.w3schools.com/ai/ai_chartjs.asp)
+* [Google Chart](https://www.w3schools.com/ai/ai_google_chart.asp)
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
