@@ -1,6 +1,6 @@
 # **W3ArtificialIntelligence**
 
-This is a notebook about AI using javascript with the reference of the AI course on [w3schools.com](https://www.w3schools.com/ai/default.asp)
+This is a notebook about AI using javascript with the reference of the AI course on [w3schools.com](https://www.w3schools.com/)
 
 ---
 
