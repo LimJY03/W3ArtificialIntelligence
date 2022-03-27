@@ -641,6 +641,74 @@ According to a study from [Oxford Economics](https://www.oxfordeconomics.com/) (
 
 ---
 
+## **08. Examples of AI**
+
+> **Artificial Intelligence samples:**
+>
+> * Self Driving Cars
+> * E-Payment
+> * Google Maps
+> * Text Autocorrect
+> * Automated Translation
+> * Chatbots
+> * Social Media
+> * Face Detection
+> * Search Algorithms
+> * Robots
+> * Automated Investment
+> * NLP - Natural Language Processing
+> * Flying Drones
+> * Dr. Watson
+> * Apple Siri
+> * Microsoft Cortana
+> * Amazon Alexa
+
+### **Artificial Music Intelligence**
+
+Can an algorithm compose better music than a human?
+
+David Cope is a former professor of music at the University of Santa Cruz (California).
+
+For over 30 years, David Cope has been developing Emmy or EMI (Experimental Musical Intelligence), an algorithm to compose music in the style of famous composers.
+
+> ### **Bach, Larson or EMI?**
+> 
+> In a test performed by professor Douglas Hofstadter of the University of Oregon, a pianist performed three musical pieces in the style of Bach:
+> 
+> * One written by Bach
+> * One written by Steve Larson
+> * One written by EMI
+>
+> Dr. Larson was hurt when the audience concluded that his piece was written by EMI.
+> 
+> He felt better when the listeners decided that the piece composed by EMI was a genuine Bach.
+> 
+> Source: [New York Times](https://www.nytimes.com/1997/11/11/science/undiscovered-bach-no-a-computer-wrote-it.html)
+> 
+> Sample piece: [David Cope Emmy Vivaldi](https://www.youtube.com/watch?v=2kuY3BrmTfQ)
+
+### **Artificial Health Intelligence**
+
+> The **Corona Pandemic** pushed the need for optimizing **Medical Healthcare**.
+
+Machine learning is a new technology that can provide better drug discovery, shorter development time, and lower drug costs.
+
+Machine learning enables healthcare to use "big data" for making better medical or clinical decisions.
+
+### **Project Baseline**
+
+[Project Baseline](https://www.projectbaseline.com/) is an initiative to make it easy for everyone to contribute to the map of human health and to participate in clinical research.
+
+In Project Baseline, researchers, clinicians, engineers, designers, advocates, and volunteers, can collaborate in building the next generation of healthcare tools and services.
+
+### **FDA Statement on AI**
+
+Statement from FDA Commissioner Scott Gottlieb, M.D. on steps towards a new, tailored review framework for artificial intelligence-based medical devices:
+
+> *"Artificial intelligence and machine learning have the potential to fundamentally transform the delivery of health care. As technology and science advance, we can expect to see earlier disease detection, more accurate diagnosis, more targeted therapies and significant improvements in personalized medicine".*
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
