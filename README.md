@@ -145,6 +145,67 @@ Plants have no brain, but they know how to reproduce, and how to prepare for the
 
 ---
 
+## **03. The History of Languages**
+
+A language is a structured system of communication that involves the use of words.
+
+### **What is a Language**
+
+* Apes and Whales communicate with each other.
+* Birds and Bees communicate with each other.
+* But only humans have developed a real Language.
+
+No other species can express ideas using sentences constructed by a set of words (with verbs and nouns).
+
+This skill is remarkable. And what is even more remarkable: Even children master this skill.
+
+### **Spoken Language**
+
+We are not sure of how old the spoken language is. The topic is difficult to study because of the lack of evidence.
+
+We don't know how it started. But we have a clue.
+
+> The great African apes, Pan and Gorilla, are our closest living relatives. Why are they called "Apes"? Because they ape. Apes mime to get their message across.
+
+It is assumed that the evolution of languages must have been a long process. Our ancestors might have started speaking a million years ago, but with fewer words, more miming, and no grammar.
+
+### **Cognitive Development**
+
+According to [Hauser, Chomsky, and Fitch (2002)](https://www.science.org/doi/abs/10.1126/science.298.5598.1569), there are six aspects of language development:
+
+* Theory of Mind
+* Understanding Vocal Signals
+* Understanding Imitation
+* Understanding Numbers
+* Understanding Intentional Communication
+* Understanding Non-linguistic Representations
+
+### **Human Languages**
+
+Human languages contain a limited set of **Words** put together in **Sentences**:
+> `[EN]` I'm going on holiday in my new car.
+>
+> `[IT]` Vado in vacanza con la mia macchina nuova.
+> 
+> `[ES]` Me voy de vacaciones en mi auto nuevo.
+> 
+> `[DE]` Ich fahre mit meinem neuen Auto in den Urlaub.
+
+### **Computer Languages**
+
+Computers are programmed with a limited set of Words put together in computer Statements:
+
+    var points = [40, 100, 1, 5, 25, 10]; 
+    points.sort(function(a, b){return a - b});
+
+### **Written Languages**
+
+Egyptian (3000 BC) and Sumerian (3500 BC) are the earliest known written languages.
+
+The oldest written language still in use today, is Chinese (1500 BC - now).
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
