@@ -369,6 +369,110 @@ Computers can handle an unlimited amount of numbers. But, humans can not.
 
 ---
 
+## **The History of Computing**
+
+### **The First Abacus**
+
+The Babylonian Abacus was developed to **Reduce the Time** to perform calculations.
+
+As stated in the previous chapter, we believe that the Babylonians invented complex counting.
+
+The period 2700–2300 BC probably saw the first appearance of an abacus, a table of successive columns which defined the orders of a 60-digits number system.
+
+### **Abacus 2.0**
+
+The Roman Abacus used 10-digits Roman numbers to **Reduce the Time** to perform calculations:
+
+![Abacus 2.0](https://www.w3schools.com/ai/img_roman_abacus.jpg)
+
+The Romans developed the Roman Abacus, a portable, base-10 version of earlier abacuses used by the Babylonians.
+
+This was the worlds first handheld computer. Used by Roman engineers, merchants and tax collectors.
+
+### **Analog Computers**
+
+**The Difference Engine** (Charles Babbage 1822) was a mechanical machine designed to **Reduce the Time** to calculate complex mathematical functions.
+
+**The Analytical Engine** (Charles Babbage 1833) was a mechanical machine designed with modern computer elements like arithmetic, logic and memory.
+
+Both of these "computers" used 10-digits (decimal) mechanical cogwheels to perform mathematical calculations.
+
+![Charles Babbage's Analytical Engine. Science Museum. London](https://www.w3schools.com/ai/img_analytical_machine.jpg)
+
+### **Digital Computers**
+
+Digital Computers use 0 / 1 switches to perform calculations. They operate on binary values like 11100110 in contrast to analog values like 230.
+
+The first Electric Digital Computer was designed and built by Konrad Zuse in Germany (1941).
+
+It used 2600 electrical relays as 0 / 1 switches. The clock speed was about 5 Hz.
+
+![Replica of the Zuse Z3. Deutsches Museum. Munich.](https://www.w3schools.com/ai/img_z3_zuse.jpg)
+
+### **Electronic Computers**
+
+First Generation Computers (1945-1950) used vacuum tubes as binary switches.
+
+> Vacuum tubes are much faster than electrical relays.
+> 
+> The clock speed of these computers was between 500 KHz and 1 Mhz.
+> 
+> ![First Generation Computers](https://www.w3schools.com/ai/img_vacuum_tubes.jpg)
+
+Second generation Computers (1950-1960) used transistors as binary 0 / 1 switches.
+
+> Transistors are much faster than vacuum tubes.
+>
+> ![Second Generation Computers](https://www.w3schools.com/ai/img_computer_transistors.jpg)
+
+Third generation Computers (1960) used integrated circuits as binary switches.
+
+> Integrated circuits are much faster than transistors.
+>
+> ![Third Generation Computers](https://www.w3schools.com/ai/img_integrated_circuits.jpg)
+
+### **Computer Speed**
+
+The first electrical computer could do 5 instructions per second.
+
+The first electronic computer did 5000 instructions per second.
+
+The first PC did 5 million instructions per second.
+
+AMD was the first PC to reach 1 billion instructions per second.
+
+Today, IPhone 12 can do 11 billion instructions per second.
+
+### **Where Did it Start and Where Will it End?**
+
+From the history above you can extract:
+
+* Computers were designed to do calculations
+* Charles Babbage created the first mechanical computer
+* The first digital computers used electromechanical switches
+* Vacuum tubes are much faster than electromechanical switches
+* Transistors are much faster than vacuum tubes
+* Integrated circuits are much faster than transistors
+* Tomorrow's computes will be faster than the human brain?
+
+> *"Computers are useless because they can only give you answers."*
+>
+> Pablo Picasso
+
+### **Computers are Smarter than Humans?**
+
+If we believe in [Moores Law](https://en.wikipedia.org/wiki/Moore%27s_law):
+
+In 2020, computers have the capacity of a mouse brain.
+
+In 2030, computers might have the capacity of a human brain:
+
+![The Singularity is Near: When Humans Transcend Biology](https://www.w3schools.com/ai/img_speed.jpg)
+
+Source: [Ray Kurzweil](https://en.wikipedia.org/wiki/Ray_Kurzweil)
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
