@@ -900,6 +900,34 @@ Java is another general-purpose coding language that can be used for all types o
 
 For AI, Java is mostly used to create machine learning solutions, search algorithms, and neural networks.
 
+### **JavaScript**
+
+Most Artificial Intelligence applications uses R or Python.
+
+But these days, several JavaScript AI framework are emerging.
+
+JavaScript frameworks make it possible to execute AI tasks in the browser.
+
+> **WebGL API**
+> 
+> WebGL is a JavaScript API for rendering 2D and 3D graphics in any browser.
+> 
+> WebGL can run on both integrated and standalone graphic cards in any PC.
+> 
+> WebGL brings 3D graphics to the web browser. Major browser vendors Apple (Safari), Google (Chrome), Microsoft (Edge), and Mozilla (Firefox) are members of the WebGL Working Group.
+> 
+> WebGL 1.0 was released in March 2011.
+> 
+> WebGL 2.0 was released in January 2017.
+
+> **NEURAL NETWORK WITH JS**
+>
+> Artificial Intelligence can be math-heavy. The nature of neural networks is highly technical, and the jargon that goes along with it tends to scare people away.
+>
+> This is where JavaScript can come to help. We need easy-to-understand software APIs to simplifying the process of creating and training neural networks.
+
+
+
 ### **SQL**
 
 SQL (Structured Query Language) is the most popular language for managing data.
