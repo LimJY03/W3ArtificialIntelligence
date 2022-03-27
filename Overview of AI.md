@@ -821,6 +821,95 @@ What is the status? What is the future?
 
 ---
 
+## **10. AI Programming**
+
+> Programming languages involved in Artificial Intelligence are:
+> 
+> * LISP
+> * R
+> * Python
+> * C++
+> * Java
+> * JavaScript
+> * SQL
+
+### **Language Ranking for AI Programming**
+
+![Language Ranking for AI Programming](https://www.w3schools.com/ai/img_languages_2020.jpg)
+
+Source: [Octoverse](https://octoverse.github.com/)
+
+### **LISP**
+
+LISP is the second oldest programming language in the world (1958), only one year younger than Fortran (1957).
+
+The term **Artificial Intelligence** was made up by John McCarthy who invented LISP.
+
+LISP was founded on the theory of **Recursive Functions** (a function appears in its own definition).
+
+Recursive Functions can be written as self-modifying functions, and this is very suitable for AI programs where "self-learning" is an important part of the program.
+
+### **R**
+
+R is a programming language for **Graphics** and **Statistical** computing.
+
+R is supported by the [R Foundation for Statistical Computing](https://www.r-project.org/).
+
+R comes with a wide set of statistical and graphical techniques for:
+
+* Linear Modeling
+* Nonlinear Modeling
+* Statistical Tests
+* Time-series Analysis
+* Classification
+* Clustering
+
+### **Python**
+
+Python is a general-purpose coding language. It can be used for all types of programming and software development.
+
+Python is typically used for server development, like building web apps for web servers.
+
+Python is also typically used in **Data Science**.
+
+An advantage for using Python is that it comes with some very suitable libraries:
+
+* NumPy (Library for working with Arrays)
+* SciPy (Library for Statistical Science)
+* Matplotlib (Graph Plotting Library)
+* NLTK (Natural Language Toolkit)
+* TensorFlow (Machine Learning)
+
+### **C++**
+
+C++ holds the title: "The worlds fastest programming language".
+
+> Because of the speed, C++ is a preferred language when programming Computer Games.
+> 
+> It provides faster execution and has less response time which is applied in search engines and development of computer games.
+
+Google uses C++ in AI programs for SEO (Search Engine Optimization).
+
+**SHARK** is a super-fast library with support for supervised learning algorithms, linear regression, neural networks, and clustering.
+
+**MLPACK** is a super-fast machine learning library written for C++.
+
+### **Java**
+
+Java is another general-purpose coding language that can be used for all types of software development.
+
+For AI, Java is mostly used to create machine learning solutions, search algorithms, and neural networks.
+
+### **SQL**
+
+SQL (Structured Query Language) is the most popular language for managing data.
+
+Knowledge of SQL databases, tables and queries helps data scientists when dealing with data.
+
+SQL is very convenient for storing, manipulating, and retrieving data in databases.
+
+---
+
 # **Reference**
 
 The link to the AI course on w3schools.com: [Artificial Intelligence](https://www.w3schools.com/ai/default.asp)
