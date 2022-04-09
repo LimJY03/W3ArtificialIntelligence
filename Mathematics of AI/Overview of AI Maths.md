@@ -239,7 +239,7 @@ One of the most common libraries to use for matrix operations is called **math.j
 
 It can be added to your web page with one line of code:
 
-> **USING math.js**
+> **USING math.js IN HTML CODE**
 > 
 >     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
 
@@ -312,4 +312,81 @@ Matrix factorization is a key tool in linear algebra, especially in Linear Least
 
 ---
 
-##
+## **07. Tensors**
+
+> A Tensor is an **N-dimensional Matrix**:
+> 
+> * A Scalar is a 0-dimensional tensor
+> * A Vector is a 1-dimensional tensor
+> * A Matrix is a 2-dimensional tensor
+> 
+> A Tensor is a generalization of Vectors and Matrices to higher dimensions.
+
+![Scalar vs Vector vs Matrix vs Tensor](https://hadrienj.github.io/assets/images/2.1/scalar-vector-matrix-tensor.png)
+
+In JavaScript, a tensor is an array with multiple indices (indexes).
+
+### **Tensor Ranks**
+
+The number of directions a tensor can have in a **N**-dimensional space, is called the **Rank** of the tensor.
+
+The rank is denoted **R**.
+
+A Scalar is a single number. R = 0.
+
+* It has 0 axis.
+* It has a Rank of 0.
+* It is a 0-dimensional Tensor.
+
+A Vector is an array of numbers. R = 1.
+
+* It has 1 axis.
+* It has a Rank of 1.
+* It is a 1-dimensional Tensor.
+
+A Matrix is a 2-dimensional array. R = 2.
+
+* It has 2 axis.
+* It has a Rank of 2.
+* It is a 2-dimensional Tensor.
+
+### **Real Tensors**
+
+Technically, all of the above are tensors, but when we speak of tensors, we generally speak of matrices with a dimension larger than 2 (R > 2).
+
+In JavaScript, an example of the initialisation and declaration of 2-D tensor (matrix):
+
+    const tensor = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]; // Array in another Array
+
+### **TensorFlow Library**
+
+One of the most common libraries to use for tensor operations is called **tensorflow.js**.
+
+> **USING tensorflow.js IN HTML CODE**
+> 
+>     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+
+### **JavaScript Tensor Operations**
+
+Programming tensor operations in JavaScript, can easily become a spaghetti of loops.
+
+Using a JavaScript library will save you a lot of headache.
+
+    const tensorA = tf.tensor([[1, 2], [3, 4], [5, 6]]);
+    const tensorB = tf.tensor([[1, -1], [2, -2], [3, -3]]);
+
+    // Tensor Addition
+    const tensorAdd = tensorA.add(tensorB);
+
+        // Result: [[2, 1], [5, 2], [8, 3]]
+
+    // Tensor Subtraction
+    const tensorSub = tensorA.sub(tensorB);
+
+        // Result: [[0, 3], [1, 6], [2, 9]]
+
+---
+
+# **Reference**
+
+The link to the subtopic on w3schools.com: [AI Mathematics](https://www.w3schools.com/ai/ai_mathematics.asp)
