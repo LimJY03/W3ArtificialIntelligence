@@ -13,6 +13,7 @@ Probability is how likely something is to occur, or how likely something is true
 The mathematic probability is a number between 0 and 1.
 
 0 indicates **Impossibility** and 1 indicates **Certainty**.
+
 ### **The Probability of an Event**
 
 I have 6 balls in a bag: 3 reds, 2 are green, and 1 is blue. What is the probability that I pick a green one blindfolded?
