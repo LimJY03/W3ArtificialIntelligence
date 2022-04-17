@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <script src = "./Example 2 - Graph Plot.js"></script>
+    
+    <body>        
+        <canvas 
+            id = "myCanvas" 
+            width = "400px" 
+            height = "400px" 
+            style = "width: 100%; max-width: 400px; border: 1px solid black">
+        </canvas>
+
+        <script>
+            // Create a Plotter
+            let plotter = new XYPlotter("myCanvas");
+            plotter.transformXY();
+
+            // Create random XY Points
+            pointCount = 500;
+            const xPoints = Array(pointCount).fill(0).map(function(){
+
+                return (Math.random() * plotter.xMax)
+            });
+            const yPoints = Array(pointCount).fill(0).map(function(){
+
+                return (Math.random() * plotter.yMax)
+            });
+
+            // Plot the points
+            plotter.plotPoints(pointCount, xPoints, yPoints, "blue");
+
+            // Plot the line
+            plotter.plotLine(plotter.xMin, plotter.yMin, plotter.xMax, plotter.yMax, "red");
+        </script>
+    </body>
+</html>
