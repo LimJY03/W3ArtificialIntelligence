@@ -1,0 +1,23 @@
+{
+  "name": "W3ArtificialIntelligence",
+  "version": "1.0.0",
+  "description": "Artificial Intelligence has changed the science of image processing, computer vision, and natural language applications. In this course, JavaScript (JS) is used throughout the whole module.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimJY03/W3ArtificialIntelligence.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LimJY03/W3ArtificialIntelligence/issues"
+  },
+  "homepage": "https://github.com/LimJY03/W3ArtificialIntelligence#readme",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.15.0"
+  }
+}
