@@ -11,7 +11,7 @@
  * - Wednesday you sold 120 (60 red, 40 white, 20 yellow) roses
  * 
  * What was the value of all the sales?
- */ 
+ */
 
 const mRose = math.matrix([3, 4, 2]);
 const mSold = math.matrix([[120, 90, 60], [80, 70, 40], [60, 40, 20]]);
