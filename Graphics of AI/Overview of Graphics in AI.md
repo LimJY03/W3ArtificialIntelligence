@@ -84,16 +84,23 @@ More on `transform` at [The `matrix()` Method](https://www.w3schools.com/css/css
 
                 this.ctx.fillStyle = color;
                 this.ctx.beginPath();               // html thing
-                this.ctx.ellipse(xArr[i], yArr[i], pointRadius, pointRadius, Math.PI * 2);
+                this.ctx.ellipse(xArr[i], yArr[i], pointRadius, pointRadius, 0, 0, Math.PI * 2);
+                this.ctx.fill();
             }
         }
 
-More about `ellipse()` at [here](https://www.geeksforgeeks.org/p5-js-ellipse-function/).
+`ellipse()` method contains the below parameters: 
+* xCoord (number), yCoord (number)
+* xRadius (number), yRadius (number)
+* rotation (number)
+* startAngle (number), endAngle (number)
+* clockwise (boolean)
 
 ### **Plotting of Random Points**
 
         // Create a Plotter
         let myPlotter = new XYPlotter("myCanvas");
+        myPlotter.transformXY();
 
         // Create random XY Points
         pointCount = 500;
