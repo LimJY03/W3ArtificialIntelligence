@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/LimJY03/W3ArtificialIntelligence#readme",
   "dependencies": {
-    "@tensorflow/tfjs": "^3.15.0"
+    "@tensorflow/tfjs": "^3.15.0",
+    "mathjs": "^10.4.3"
   }
 }
