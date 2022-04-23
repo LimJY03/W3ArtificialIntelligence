@@ -195,8 +195,10 @@ Human languages contain a limited set of **Words** put together in **Sentences**
 
 Computers are programmed with a limited set of Words put together in computer Statements:
 
-    var points = [40, 100, 1, 5, 25, 10]; 
-    points.sort(function(a, b){return a - b});
+```js
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});
+```
 
 ### **Written Languages**
 
