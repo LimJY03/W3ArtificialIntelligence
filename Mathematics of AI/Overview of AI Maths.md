@@ -110,9 +110,11 @@ In linear algebra, a scalar is a single number.
 
 > In JavaScript it can be written like a constant or a variable:
 > 
->     const myScalar = 1;
->     let x = 1;
->     var y = 1;
+> ```js
+> const myScalar = 1;
+> let x = 1;
+> var y = 1;
+> ```
 
 ---
 
@@ -122,16 +124,22 @@ In linear algebra, a vector is an array of numbers.
 
 > In JavaScript, it can be written as an array:
 > 
->     const vectorArray = [1, 2, 3];
+> ```js
+> const vectorArray = [1, 2, 3];
+> ```
 >
 > It can also be written as Matrices with only one column:
 > 
->     const vectorMatrix = [[1], [2], [3]];
+> ```js
+> const vectorMatrix = [[1], [2], [3]];
+> ```
 > 
 > An array can have multiple dimensions, but a vector is a 1-dimensional array.
 >
->     const myArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
->     myArray.length;   // the length of myArray is 11
+> ```js
+> const myArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+> myArray.length;   // the length of myArray is 11
+> ```
 
 Vectors have a **Magnitude** and a **Direction**. 
 
@@ -189,7 +197,9 @@ In linear algebra, a matrix is a 2-dimensional array.
 
 > In JavaScript, a matrix is an array with 2 indices (indexes).
 > 
->     var myArray = [[1, 2], [3, 4], [5, 6]];
+> ```js
+> var myArray = [[1, 2], [3, 4], [5, 6]];
+> ```
 
 ### **Matrix Dimensions**
 
@@ -241,24 +251,28 @@ It can be added to your web page with one line of code:
 
 > **USING math.js IN HTML CODE**
 > 
->     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+> ```html
+> <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.3.2/math.js"></script>
+> ```
 
 ### **Addition and Subtraction of Matrices**
 
 If two matrices have the **same dimension**, we can add or subtract them:
 
->     const mA = math.matrix([[1, 2], [3, 4], [5, 6]]);
->     const mB = math.matrix([[1, -1], [2, -2], [3, -3]]);
->     
->     // Matrix Addition
->     const matrixAdd = math.add(mA, mB);
->     
->       // additionResult: [[2, 1], [5, 2], [8, 3]]
->     
->     // Matrix Subtraction
->     const matrixSub = math.subtract(mA, mB);
->     
->       // subtractionResult: [[0, 3], [1, 6], [2, 9]]
+> ```js    
+> const mA = math.matrix([[1, 2], [3, 4], [5, 6]]);
+> const mB = math.matrix([[1, -1], [2, -2], [3, -3]]);
+> 
+> // Matrix Addition
+> const matrixAdd = math.add(mA, mB);
+> 
+>   // additionResult: [[2, 1], [5, 2], [8, 3]]
+> 
+> // Matrix Subtraction
+> const matrixSub = math.subtract(mA, mB);
+> 
+>   // subtractionResult: [[0, 3], [1, 6], [2, 9]]
+> ```
 
 ### **Scalar Multiplication and Division of Matrices**
 
@@ -266,17 +280,19 @@ While numbers in rows and columns are called **Matrices**, single numbers are ca
 
 It is easy to multiply or divide a matrix with a scalar. Just multiply or divide each number in the matrix with the scalar:
 
->     const mA = math.matrix([[0, 2], [4, 6], [8, 10]]);
->     
->     // Matrix Multiplication
->     const matrixMult = math.multiply(2, mA);
->     
->       // Result [[0, 4], [8, 12], [16, 20] 
->     
->     // Matrix Division
->     const matrixDiv = math.divide(mA, 2); 
->     
->       // Result [[0, 1], [2, 3], [4, 5]]
+> ```js
+> const mA = math.matrix([[0, 2], [4, 6], [8, 10]]);
+> 
+> // Matrix Multiplication
+> const matrixMult = math.multiply(2, mA);
+> 
+>   // Result [[0, 4], [8, 12], [16, 20] 
+> 
+> // Matrix Division
+> const matrixDiv = math.divide(mA, 2); 
+> 
+>   // Result [[0, 1], [2, 3], [4, 5]]
+> ```
 
 ### **Transposition of Matrices**
 
@@ -296,13 +312,15 @@ Then, we need to compile a "[dot product](https://en.wikipedia.org/wiki/Dot_prod
 
 We need to multiply the numbers in each row of A with the numbers in each column of B, and then add the products:
 
->     const mA = math.matrix([[1, 2, 3]]);
->     const mB = math.matrix([[1, 2, 3], [1, 2, 3], [1, 2, 3]]);
->     
->     // Matrix Multiplication
->     const matrixMult = math.multiply(mA, mB);
->     
->       // Result [[6, 12, 18]]
+> ```js
+> const mA = math.matrix([[1, 2, 3]]);
+> const mB = math.matrix([[1, 2, 3], [1, 2, 3], [1, 2, 3]]);
+> 
+> // Matrix Multiplication
+> const matrixMult = math.multiply(mA, mB);
+> 
+>   // Result [[6, 12, 18]]
+> ```
 
 ### **Matrix Factorization**
 
@@ -356,7 +374,9 @@ Technically, all of the above are tensors, but when we speak of tensors, we gene
 
 In JavaScript, an example of the initialisation and declaration of 2-D tensor (matrix):
 
-    const tensor = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]; // Array in another Array
+```js
+const tensor = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]; // Array in another Array
+```
 
 ### **TensorFlow Library**
 
@@ -364,7 +384,9 @@ One of the most common libraries to use for tensor operations is called **tensor
 
 > **USING tensorflow.js IN HTML CODE**
 > 
->     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+> ```html
+> <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+> ```
 
 ### **JavaScript Tensor Operations**
 
@@ -372,18 +394,20 @@ Programming tensor operations in JavaScript, can easily become a spaghetti of lo
 
 Using a JavaScript library will save you a lot of headache.
 
-    const tensorA = tf.tensor([[1, 2], [3, 4], [5, 6]]);
-    const tensorB = tf.tensor([[1, -1], [2, -2], [3, -3]]);
+```js
+const tensorA = tf.tensor([[1, 2], [3, 4], [5, 6]]);
+const tensorB = tf.tensor([[1, -1], [2, -2], [3, -3]]);
 
-    // Tensor Addition
-    const tensorAdd = tensorA.add(tensorB);
+// Tensor Addition
+const tensorAdd = tensorA.add(tensorB);
 
-        // Result: [[2, 1], [5, 2], [8, 3]]
+    // Result: [[2, 1], [5, 2], [8, 3]]
 
-    // Tensor Subtraction
-    const tensorSub = tensorA.sub(tensorB);
+// Tensor Subtraction
+const tensorSub = tensorA.sub(tensorB);
 
-        // Result: [[0, 3], [1, 6], [2, 9]]
+    // Result: [[0, 3], [1, 6], [2, 9]]
+```
 
 ---
 
