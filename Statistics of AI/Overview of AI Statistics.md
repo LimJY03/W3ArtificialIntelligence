@@ -34,12 +34,12 @@ The probability of an event A is often written as P(A).
 
 When tossing two coins, there are 4 possible outcomes:
 
-    Event, A      | P(A)
-    --------------|-----------
-    Heads + Heads | 1/4 = 0.25
-    Tails + Tails | 1/4 = 0.25
-    Heads + Tails | 1/4 = 0.25
-    Tails + Heads | 1/4 = 0.25
+|Event, A      | P(A)      |
+|:---          |:----------|
+|Heads + Heads | 1/4 = 0.25|
+|Tails + Tails | 1/4 = 0.25|
+|Heads + Tails | 1/4 = 0.25|
+|Tails + Heads | 1/4 = 0.25|
 
 > When P(A) **=** P(B): Event A and B have the **same** chance to occur.
 > 
@@ -89,18 +89,23 @@ The mean is the **Average** of all values.
 
 This table contains house prices versus size:
 
-    Price	7	8	8	9	9	9	 10	  11   14	14	 15
-    Size	50	60	70	80	90	100	 110  120  130	140	 150
+|Price|	7	|8	  |8	|9    |9	|9	  |10	|11   |14	|14	  |15   |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|Size |	50	|60   |70   |80   |90	|100  |110  |120  |130	|140  |150  |
 
 The mean price is (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 11 = 10.363636.
 
 > Calculating **mean** in JavaScript:
 >
->     var mean = (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 11;
+> ```js
+> var mean = (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 11;
+> ```
 
 > Or if we use a math library like math.js:
 >
->     var mean = math.mean([7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]);
+> ```js
+> var mean = math.mean([7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15]);
+> ```
 
 ### **The Variance**
 
@@ -110,18 +115,22 @@ In other words, it describes how far a set of numbers is spread out from their a
 
 > Calculating **variance** in JavaScript:
 >
->     // Calculate the Mean (m)
->     var m = (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 11;
+> ```js
+> // Calculate the Mean (m)
+> var m = (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 1
+> 
+> // Calculate the Sum of Squares (ss)
+> var ss = (7-m)**2 + (8-m)**2 + (8-m)**2 + (9-m)**2 + (9-m)**2 + (9-m)**2 + (10-m)**2 + (11-m)**2 + (14-m)**2 + (14-m)**2 + (15-m)**2;
 >
->     // Calculate the Sum of Squares (ss)
->     var ss = (7-m)**2 + (8-m)**2 + (8-m)**2 + (9-m)**2 + (9-m)**2 + (9-m)**2 + (10-m)**2 + (11-m)**2 + (14-m)**2 + (14-m)**2 + (15-m)**2;
->
->     // Calculate the Variance
->     var variance = ss / 11;
+> // Calculate the Variance
+> var variance = ss / 11;
+> ```
 
 > Or if we use a math library like math.js:
 >
->     var variance = math.variance([7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15], "uncorrected");
+> ```js
+> var variance = math.variance([7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15], "uncorrected");
+> ```
 
 ### **Standard Deviation**
 
@@ -133,21 +142,25 @@ The formula is the **√(variance)** (the square root of the variance).
 
 > Calculating **standard deviation** in JavaScript:
 > 
->     // Calculate the Mean (m)
->     var m = (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 11;
-> 
->     // Calculate the Sum of Squares (ss)
->     var ss = (7-m)**2 + (8-m)**2 + (8-m)**2 + (9-m)**2 + (9-m)**2 + (9-m)**2 + (10-m)**2 + (11-m)**2 + (14-m)**2 + (14-m)**2 + (15-m)**2;
+> ```js
+> // Calculate the Mean (m)
+> var m = (7 + 8 + 8 + 9 + 9 + 9 + 10 + 11 + 14 + 14 + 15) / 11;
 >
->     // Calculate the Variance
->     var variance = ss / 11;
+> // Calculate the Sum of Squares (ss)
+> var ss = (7-m)**2 + (8-m)**2 + (8-m)**2 + (9-m)**2 + (9-m)**2 + (9-m)**2 + (10-m)**2 + (11-m)**2 + (14-m)**2 + (14-m)**2 + (15-m)**2;
+>
+> // Calculate the Variance
+> var variance = ss / 11;
 >     
->     // Calculate the Standard Deviation
->     var std = Math.sqrt(variance); // Java Lib uses (M)ath, math.js uses (m)ath
+> // Calculate the Standard Deviation
+> var std = Math.sqrt(variance); // Java Lib uses (M)ath, math.js uses (m)ath
+> ```
 
 > Or if we use a math library like math.js:
 >
->     var std = math.std([7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15], "uncorrected");
+> ```js
+> var std = math.std([7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15], "uncorrected");
+> ```
 
 ---
 
