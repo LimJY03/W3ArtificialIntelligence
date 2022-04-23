@@ -16,17 +16,21 @@ Having a Plotter Object is nice when studying Artificial Intelligence:
 
 ### **Create a Plotter Object**
 
-    function XYPlotter(id) {
+```js
+function XYPlotter(id) {
 
-        this.canvas = document.getElementById(id);  // html thing
-        this.ctx = this.canvas.getContext("2d");    // html thing
-        this.xMin = 0;
-        this.yMin = 0;
-        this.xMax = this.canvas.width;
-        this.yMax = this.canvas.height;
+    this.canvas = document.getElementById(id);  // html thing
+    this.ctx = this.canvas.getContext("2d");    // html thing
 
-        ...
-    }
+    this.xMin = 0;
+    this.yMin = 0;
+
+    this.xMax = this.canvas.width;
+    this.yMax = this.canvas.height;
+
+    ...
+}
+```
 
 Info about `HTML` canvas in `JavaScript` at [here](https://www.w3schools.com/tags/canvas_strokestyle.asp)
 
@@ -36,20 +40,24 @@ Info about `HTML` canvas in `JavaScript` at [here](https://www.w3schools.com/tag
 
 ### **Add a Method for Line Plotting**
 
-        this.plotLine = function(x0, y0, x, y, color){
+```js
+    this.plotLine = function(x0, y0, x, y, color){
 
-            this.ctx.moveTo(x0, y0);                // Defines starting point of line
-            this.ctx.lineTo(x, y);                  // Defines ending point of line
-            this.ctx.strokeStyle = color;           // Set the line color to color
-            this.ctx.stroke();                      // "Draws" a visible line
-        }
+        this.ctx.moveTo(x0, y0);        // Defines starting point of line
+        this.ctx.lineTo(x, y);          // Defines ending point of line
+        this.ctx.strokeStyle = color;   // Set the line color to color
+        this.ctx.stroke();              // "Draws" a visible line
+    }
+```
 
 ### **Add a Method for Transforming XY Values**
 
-        this.transformXY = function(){
-            
-            this.ctx.transform(1, 0, 0, -1, 0, this.canvas.height);
-        }
+```js
+    this.transformXY = function(){
+        
+        this.ctx.transform(1, 0, 0, -1, 0, this.canvas.height);
+    }
+```
 
 * `xScale` = 1: no scaling in x direction.
 * `xSkew` = 0: no skewing in x direction.
@@ -78,16 +86,18 @@ More on `transform` at [The `matrix()` Method](https://www.w3schools.com/css/css
 
 ### **Add a Method for Points Plotting**
 
-        this.plotPoints = function(n, xArr, yArr, color, pointRadius = 3){
+```js
+    this.plotPoints = function(n, xArr, yArr, color, pointRadius = 3){
 
-            for(let i = 0; i < n; i++){
+        for(let i = 0; i < n; i++){
 
-                this.ctx.fillStyle = color;
-                this.ctx.beginPath();               // html thing
-                this.ctx.ellipse(xArr[i], yArr[i], pointRadius, pointRadius, 0, 0, Math.PI * 2);
-                this.ctx.fill();
-            }
+            this.ctx.fillStyle = color;
+            this.ctx.beginPath();               // html thing
+            this.ctx.ellipse(xArr[i], yArr[i], pointRadius, pointRadius, 0, 0, Math.PI * 2);
+            this.ctx.fill();
         }
+    }
+```
 
 `ellipse()` method contains the below parameters: 
 * xCoord (number), yCoord (number)
@@ -98,17 +108,19 @@ More on `transform` at [The `matrix()` Method](https://www.w3schools.com/css/css
 
 ### **Plotting of Random Points**
 
-        // Create a Plotter
-        let myPlotter = new XYPlotter("myCanvas");
-        myPlotter.transformXY();
+```js
+    // Create a Plotter
+    let myPlotter = new XYPlotter("myCanvas");
+    myPlotter.transformXY();
 
-        // Create random XY Points
-        pointCount = 500;
-        const xPoints = Array(pointCount).fill(0).map(function(){return Math.random() * myPlotter.xMax});
-        const yPoints = Array(pointCount).fill(0).map(function(){return Math.random() * myPlotter.yMax});
+    // Create random XY Points
+    pointCount = 500;
+    const xPoints = Array(pointCount).fill(0).map(function(){return Math.random() * myPlotter.xMax});
+    const yPoints = Array(pointCount).fill(0).map(function(){return Math.random() * myPlotter.yMax});
 
-        // Plot the Points
-        myPlotter.plotPoints(pointCount, xPoints, yPoints, "blue");
+    // Plot the Points
+    myPlotter.plotPoints(pointCount, xPoints, yPoints, "blue");
+```
 
 The array `xPoints` has size 500, and is filled with 500 elements of value 0. The same goes to array `yPoints`. More about `fill()` at [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill).
 
