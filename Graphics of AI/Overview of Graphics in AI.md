@@ -134,6 +134,86 @@ The same goes to array `yPoints`. More about `map()` at [here](https://www.w3sch
 
 ## **02. AI Linear Graphs**
 
+Linear means straight. A linear graph is a straight line graph.
+
+```js
+var xValue = [];
+var yValue = [];
+
+// Generate values into array
+for(let i = 0; i <= 10; i++>){
+    xValues.push[i];
+    yValues.push[i];
+}
+
+// Define data
+var data = [{
+    x: xValues,
+    y: yValues,
+    mode: "lines"
+}];
+
+// Define layout
+var layout = [title: "Graph of y = x"];
+
+// Display using plotly
+Plotly.newplot("myPlot", data, layout);
+```
+
+### **Plotly.js**
+
+Built on top of [`d3.js`](https://d3js.org/) and [`stack.gl`](http://stack.gl/), `plotly.js` is a high-level, declarative charting library. `plotly.js` ships with over 40 chart types, including scientific charts, 3D graphs, statistical charts, SVG maps, financial charts, and more.
+
+Below are some ways to install `plotly.js`:
+> **INSTALL WITH `npm`**
+> 
+> ```
+> npm install plotly.js-dist
+> ```
+> 
+> Import `plotly.js` as:
+> 
+> ```js 
+> import Plotly from 'plotly.js-dist';
+> ``` 
+> 
+> or 
+> 
+> ```js
+> var Plotly = require('plotly.js-dist');
+> ```
+
+> **INSTALL WITH `html`**
+> 
+> ```html
+> <!-- Latest compiled and minified plotly.js JavaScript -->
+> <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+>  
+> <!-- OR use a specific plotly.js release (e.g. version 1.5.0) -->
+> <script src="https://cdn.plot.ly/plotly-1.5.0.min.js"></script>
+>  
+> <!-- OR an un-minified version is also available -->
+> <script src="https://cdn.plot.ly/plotly-latest.js" charset="utf-8"></script>
+> ```
+> 
+> and use the `Plotly` object in the window scope.
+
+More details about `plotly.js` at [here](https://plotly.com/javascript/).
+
+### **Slope**
+
+It signifies the angle of inclination of the graph.
+
+It is the value of *a* in the linear graph equation *y* = ***a**x* + *b*.
+
+### **Intercept**
+
+It is the start value of the graph.
+
+* Start value is the *y* value of the graph when *x* = 0.
+
+It is the value of *b* in the linear graph equation *y* = *ax* + ***b***.
+
 ---
 
 # **Reference**
