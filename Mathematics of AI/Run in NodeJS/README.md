@@ -1,4 +1,4 @@
-# **Run .js Files in NodeJS**
+# **Run JavaScript Files in NodeJS**
 
 We will be running `.js` files on terminal.
 
