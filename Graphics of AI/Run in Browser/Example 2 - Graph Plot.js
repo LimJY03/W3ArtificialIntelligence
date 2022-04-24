@@ -1,4 +1,4 @@
-function XYPlotter(id) {
+function XYPlotter(id){
 
     this.canvas = document.getElementById(id);  // html thing
     this.ctx = this.canvas.getContext("2d");    // html thing
