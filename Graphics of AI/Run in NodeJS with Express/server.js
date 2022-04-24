@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/Example 2 - Graph Plot.html")
 });
 
-app.use(express.static("Example 2"));
+app.use(express.static("static"));
 
 server.listen(3000, () => {
     console.log("listening on *: 3000")
