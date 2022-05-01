@@ -364,7 +364,7 @@ A is the *y*-intercept of the graph, and B is the slope of the graph.
 
 > The value of A can be deduced from B using the formula below:
 > 
-> ```css
+> ```markdown
 > A = (Σy / n) - ((B * Σx) / n)
 > ```
 
@@ -384,15 +384,23 @@ Machine Learning is often considered equivalent with Artificial Intelligence.
 
 Machine Learning is a discipline of AI that uses data to teach machines.
 
-> Classical programming uses programs (algorithms) to create results:
-> 
-> * Traditional Computing:
-> 
->     * Data + Computer Algorithm = **Result**
-> 
-> * Machine Learning uses results to create programs (algorithms):
-> 
->     * Data + Result = **Computer Algorithm**
+Classical programming uses programs (algorithms) to create results:
+
+* Traditional Computing:
+
+    * Data + Computer Algorithm = **Result**
+
+* Machine Learning uses results to create programs (algorithms):
+
+    * Data + Result = **Computer Algorithm**
+
+> *"A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."*
+> \
+> **‒ Tom Mitchell (1999)**
+
+Tom Michael Mitchell (born 1951) is an American computer scientist and University Professor at the Carnegie Mellon University (CMU).
+
+* He is a former Chair of the Machine Learning Department at CMU.
 
 ### **Supervised Learning**
 
@@ -418,6 +426,154 @@ It is expected that machine learning will shift to unsupervised learning to allo
 Self-supervised learning is similar to unsupervised learning because both work with data without human added labels.
 
 The difference is that unsupervised learning uses clustering, grouping, and dimensionality reduction, while self-supervised learning draw its own conclusions for regression and classification tasks.
+
+---
+
+## **06. Neural Networks (NN)**
+
+Neural Networks is one of the most significant discoveries in history.
+
+Neural Networks can solve problems that can't be solved by algorithms:
+
+* Medical Diagnosis
+* Face Detection
+* Voice Recognition
+
+**Neural Networks** is the essence of **Deep Learning**.
+
+### **Deep Learning**
+
+The deep learning revolution was not started by a single discovery. It more or less happened when several needed factors were ready:
+
+* Computers were fast enough
+* Computer storage was big enough
+* Better training methods were invented
+* Better tuning methods were invented
+
+### **Neurons and Neural Networks**
+
+Scientists agree that our brain has around 100 billion neurons.
+
+These neurons have hundreds of billions connections between them.
+
+![Neuron](https://www.w3schools.com/ai/img_neurons.jpg)
+
+Neurons (aka Nerve Cells) are the fundamental units of our brain and nervous system.
+
+The neurons are responsible for receiving input from the external world, for sending output (commands to our muscles), and for transforming the electrical signals in between.
+
+**Artificial Neural Networks** are normally called Neural Networks (NN).
+
+* Neural networks are in fact multi-layer **Perceptrons**.
+* The perceptron defines the first step into multi-layered neural networks.
+
+> **A standard neural network model looks like this:**
+> 
+> ![](https://www.w3schools.com/ai/img_neural_networks.jpg)
+> 
+> Input data (Yellow) are processed against a hidden layer (Blue) and modified against another > hidden layer (Green) to produce the final output (Red).
+
+### **Giraffe**
+
+In 2015, **Matthew Lai**, a student at Imperial College in London created a neural network called **Giraffe**.
+
+Giraffe could be trained in **72 hours** to play chess at the same level as an international master.
+
+Computers playing chess are not new, but the way this program was created was new.
+
+Smart chess playing programs take years to build, while Giraffe was built in 72 hours with a neural network.
+
+### **Neural Networks with JavaScript**
+
+Artificial Intelligence can be math-heavy. The nature of neural networks is highly technical, and the jargon that goes along with it tends to scare people away.
+
+This is where JavaScript can come to help. We need easy to understand software APIs to simplifying the process of creating and training neural networks.
+
+**`Brain.js`** is a JavaScript library that makes it easy to understand Neural Networks because it hides the complexity of the mathematics.
+
+### **Introduction to `ml5.js`**
+
+**`ml5.js`** is trying to make machine learning more accessible to a wider audience.
+
+Below are some ways to install `ml5.js`:
+
+> **INSTALL WITH `HTML`**
+> 
+> ```html
+> <!-- We do not recommend this as your code may break as we update ml5 -->
+> <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+>
+> <!-- Use the latest version (0.12.2) by adding it to the head section of your HTML document -->
+> <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js" type="text/javascript"></script>
+>
+> <!-- To use an earlier version for any reason, you can change the version number -->
+> <script src="https://unpkg.com/ml5@0.6.1/dist/ml5.min.js" type="text/javascript"></script>
+> ```
+> 
+> More info can be found [here](https://www.npmjs.com/package/ml5).
+
+The team is working to wrap machine learning functionality in friendlier ways.
+ 
+The example below uses only few lines of code (under `<script>`) to classify an image:
+ 
+> ```html
+> <!DOCTYPE html>
+> <html>
+>     <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+>     <script src = "https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+>     <body>
+>         <h1>Image Classification</h1>
+>         <h2>With MobileNet and ml5.js</h2>
+>         <div id = "result">Scanning ...</div>
+> 
+>         <!-- Replace pic1 to pic2 or pic3 to view result for different images -->
+>         <img id = "image" src = "pic1.jpg" width = "100%"> 
+> 
+>         <script>
+>             // Initialize Image Classifier with MobileNet.
+>             const classifier =  ml5.imageClassifier('MobileNet');
+>             classifier.classify(document.getElementById("image"), gotResult);
+> 
+>             // Function to run when results arrive
+>             function gotResult(error, results){
+>                 const element = document.getElementById("result");
+> 
+>                 if(error){
+>                     element.innerHTML = error;
+>                 }
+>                 else{
+>                     let num = results[0].confidence * 100;
+>                     element.innerHTML = results[0].label + "<br>Confidence: " + num.toFixed(2) + > "%";
+>                 }
+>             }
+>         </script>
+>     </body>
+> </html>
+> ```
+
+Below are the results of the image classifier:
+
+> **IMAGE 1**
+> 
+> ![pic1](https://media.discordapp.net/attachments/970234628214489118/970263543758848040/unknown.png?width=592&height=701)
+>
+> **IMAGE 2**
+>
+> ![pic2](https://media.discordapp.net/attachments/970234628214489118/970263730480873502/unknown.png?width=589&height=701)
+> 
+> **IMAGE 3**
+> 
+> ![pic3](https://media.discordapp.net/attachments/970234628214489118/970263837397889024/unknown.png?width=604&height=701)
+
+### **TensorFlow Playground**
+
+[TensorFlow Playground](https://playground.tensorflow.org/) is a web application written in `d3.js`.
+
+With TensorFlow Playground you can learn about **Neural Networks** (NN) without math.
+
+In your own **Web Browser** you can create a Neural Network and see the result.
+
+`TensorFlow.js` was previously called `Tf.js` and `Deeplearn.js`.
 
 ---
 
