@@ -372,7 +372,52 @@ More information about Linear Regression can be found [here](https://owlcation.c
 
 ---
 
+## **05. Machine Learning**
 
+Machine Learning is often considered equivalent with Artificial Intelligence.
+
+* This is not correct. Machine learning is a subset of Artificial Intelligence.
+
+> *"Machine Learning is a field of study that gives computers the ability to learn without being programmed."*
+> \
+> **‒ Arthur Samuel (1959)**
+
+Machine Learning is a discipline of AI that uses data to teach machines.
+
+> Classical programming uses programs (algorithms) to create results:
+> 
+> * Traditional Computing:
+> 
+>     * Data + Computer Algorithm = **Result**
+> 
+> * Machine Learning uses results to create programs (algorithms):
+> 
+>     * Data + Result = **Computer Algorithm**
+
+### **Supervised Learning**
+
+Supervised learning uses labeled data (data with known answers) to train algoritms to:
+
+* Classify Data
+* Predict Outcomes
+
+Supervised learning can **classify** data like "What is spam in an e-mail", based on known spam examples.
+
+Supervised learning can **predict** outcomes like predicting what kind of video you like, based on videos you have played.
+
+### **Unsupervised Learning**
+
+Unsupervised learning is used to predict undefined relationships like meaningful patterns in data.
+
+It is about creating computer algorithms than can improve themselves.
+
+It is expected that machine learning will shift to unsupervised learning to allow programmers to solve problems without creating models.
+
+### **Self-Supervised Learning**
+
+Self-supervised learning is similar to unsupervised learning because both work with data without human added labels.
+
+The difference is that unsupervised learning uses clustering, grouping, and dimensionality reduction, while self-supervised learning draw its own conclusions for regression and classification tasks.
 
 ---
 
