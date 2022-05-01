@@ -51,7 +51,7 @@ The deep learning revolution started around 2010. Since then, Deep Learning has 
 
 ---
 
-## **Data in AI**
+## **02. Data in AI**
 
 Up to **80%** of a Machine Learning project is about **Collecting Data**:
 
@@ -124,6 +124,82 @@ In order for a sample to represent a population, it must be collected randomly.
 A **Random Sample** is a sample where every member of the population has an equal chance to appear in the sample.
 
 A **Sampling Bias** (Error) occurs when samples are collected in such a way that some individuals are less (or more) likely to be included in the sample.
+
+---
+
+## **03. Data Clusters**
+
+Clusters are collections of data based on similarity.
+
+Data points clustered together in a graph can often be classified into clusters.
+
+In the graph below we can distinguish 3 different clusters:
+
+![clustering](https://i.stack.imgur.com/e2UeU.png)
+
+### **Identifying Clusters**
+
+Clusters can hold a lot of valuable information, but clusters come in all sorts of shapes, so how can we recognize them?
+
+The two main methods are:
+
+* Using Visualization
+* Using an Clustering Algorithm
+
+### **Clustering**
+
+Clustering is a type of **Unsupervised Learning**.
+
+Clustering is trying to:
+
+* Collect similar data in groups
+* Collect dissimilar data in other groups
+
+There are 4 clustering methods:
+
+**01. Density Method**
+
+> It considers points in a dense regions to have more similarities and differences than points in a lower dense region. The density method has a good accuracy. It also has the ability to merge clusters.
+>     
+> Two common algorithms are **DBSCAN** and **OPTICS**.
+
+**02. Hierarchical Method**
+
+> It forms the clusters in a tree-type structure. New clusters are formed using previously formed clusters.
+> 
+> Two common algorithms are **CURE** and **BIRCH**. 
+
+**03. Partitioning Method**
+
+> It partitions the objects into k clusters and each partition forms one cluster.
+> 
+> One common algorithm is **CLARANS**.
+
+**04. Grid-based Method**
+
+> It formulates the data into a finite number of cells that form a grid-like structure.
+> 
+> Two common algorithms are **CLIQUE** and **STING**.
+
+### **Correlation Coefficient**
+
+The **Correlation Coefficient** (r) describes the strength and direction of a linear relationship and x/y variables on a scatterplot.
+
+The value of r is always between -1 and +1:
+
+| r | Description | Relationship |
+| :---: | :--- | :--- |
+| -1.00 | Perfect Downhill | Negative Linear Relationship |
+| -0.70 | Strong Downhill | Negative Linear Relationship |
+| -0.50 | Moderate Downhill | Negative Linear Relationship |
+| -0.30 | Weak Downhill | Negative Linear Relationship |
+| 0.00 | - | No Linear Relationship |
+| +0.30 | Weak Uphill | Positive Linear Relationship |
+| +0.50 | Moderate Uphill | Positive Linear Relationship |
+| +0.70 | Strong Uphill | Positive Linear Relationship |
+| +1.00 | Perfect Uphill | Positive Linear Relationship |
+
+![Correlation Coefficient Graphs](https://th.bing.com/th/id/OIP.SHXiBZ4wxa3BYpyjam35AgHaFj?pid=ImgDet&rs=1)
 
 ---
 
