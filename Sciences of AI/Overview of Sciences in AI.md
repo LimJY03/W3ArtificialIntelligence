@@ -203,6 +203,179 @@ The value of r is always between -1 and +1:
 
 ---
 
+## **04. Linear Regression**
+
+A **Regression** is a method to determine the relationship between one variable (*y*) and other variables (*x*).
+
+In statistics, a **Linear Regression** is an approach to modeling a linear relationship between *y* and *x*.
+
+In Machine Learning, a **Linear Regression** is a supervised machine learning algorithm.
+
+### **Predicting Values**
+
+![Scattered Data](https://media.discordapp.net/attachments/970234628214489118/970234645167886346/unknown.png)
+
+From a scattered data, how can we predict future prices?
+
+* Use hand drawn linear graph
+* Model a linear relationship
+* Model a linear regression
+
+#### **Below is a linear graph predicting prices based on the lowest and the highest price:**
+
+![Linear from Ends](https://media.discordapp.net/attachments/970234628214489118/970235332287135784/unknown.png)
+
+> The code to plot the graph is as below:
+> 
+> ```js
+> var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+> var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+> 
+> // Define Data
+> var data = [
+>     {x: xArray, y: yArray, mode: "markers"},
+>     {x: [50, 150], y: [7, 15], mode: "line"}
+> ];
+> 
+> // Define Layout
+> var layout = {
+>     xaxis: {range: [40, 160], title: "Square Meters"},
+>     yaxis: {range: [5, 16], title: "Price in Millions"},
+>     title: "House Prices vs Size"
+> };
+> 
+> // Display using Plotly
+> Plotly.newPlot("lineDots1", data, layout); // In HTML: <div id = "lineDots1" ...></div>
+> ```
+
+#### **This **Model** predicts prices using a linear relationship between price and size:**
+
+![LinearRelationshipModel](https://media.discordapp.net/attachments/970234628214489118/970236981063876628/unknown.png)
+
+> The code to plot the graph is as below:
+> 
+> ```js
+> var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+> var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+> 
+> // Calculate Slope
+> var xSum = xArray.reduce(function(a, b){return a + b;}, 0);
+> var ySum = yArray.reduce(function(a, b){return a + b;}, 0);
+> var slope = ySum / xSum;
+> 
+> // Generate values
+> var xValues = [];
+> var yValues = [];
+> 
+> for(var x = 50; x <= 150; x++){
+>   xValues.push(x);
+>   yValues.push(x * slope);  // Y = mX + 0
+> }
+> 
+> // Define Data
+> var data = [
+>     {x: xArray, y: yArray, mode: "markers"},
+>     {x: xValues, y: yValues, mode: "line"}
+> ];
+> 
+> // Define Layout
+> var layout = {
+>     xaxis: {range: [40, 160], title: "Square Meters"},
+>     yaxis: {range: [5, 16], title: "Price in Millions"},
+>     title: "House Prices vs Size"
+> };
+> 
+> // Display using Plotly
+> Plotly.newPlot("lineDots2", data, layout); // In HTML: <div id = "lineDots2" ...></div>
+> ```
+> 
+> In the example above, the slope is a calculated average (Σ*y* / Σ*x*) and the *y*-intercept = 0.
+
+The `reduce()` method executes a reducer function for array element and returns a single value, which is the function's accumulated result.
+
+* We reduce the array containing many elements into one "Σ elements in the array".
+
+Syntax of `reduce()` is as below:
+
+> ```js
+> array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+> ```
+> 
+> The parameters `currentIndex` and `arr` are optional, we do not have these parameters in the code above.
+
+More details about `reduce()` method can be found [here](https://medium.com/swlh/javascript-reduce-with-examples-570f1b51e854).
+
+#### **This **Model** predicts prices using a linear regression function:**
+
+![LinearRegressionModel](https://media.discordapp.net/attachments/970234628214489118/970242011649163274/unknown.png)
+
+> The code to plot the graph is as below:
+> 
+> ```js
+> var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+> var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+> 
+> // Calculate Sums
+> var xSum = 0, ySum = 0, xxSum = 0, xySum = 0;
+> var count = xArray.length;
+> 
+> for (let i = 0; i < count; i++){
+>   xSum += xArray[i];                // Calculate Σx
+>   ySum += yArray[i];                // Calculate Σy
+>   xxSum += xArray[i] * xArray[i];   // Calculate Σx²
+>   xySum += xArray[i] * yArray[i];   // Calculate Σxy
+> }
+> 
+> // Calculate slope and intercept
+> var slope = ((count * xySum) - (xSum * ySum)) / ((count * xxSum) - (xSum * xSum));
+> var intercept = ((ySum * xxSum) - (xSum * xySum)) / ((count * xxSum) - (xSum * xSum));
+> 
+> // Generate values
+> var xValues = [];
+> var yValues = [];
+> 
+> for (var x = 50; x <= 150; x++){
+>   xValues.push(x);
+>   yValues.push(x * slope + intercept); // y = Bx + A
+> }
+> 
+> // Define Data
+> var data = [
+>     {x: xArray, y: yArray, mode: "markers"},
+>     {x: xValues, y: yValues, mode: "line"}
+> ];
+> 
+> // Define Layout
+> var layout = {
+>     xaxis: {range: [40, 160], title: "Square Meters"},
+>     yaxis: {range: [5, 16], title: "Price in Millions"},
+>     title: "House Prices vs Size"
+> };
+> 
+> // Display using Plotly
+> Plotly.newPlot("lineDots3", data, layout); // In HTML: <div id = "lineDots3" ...></div>
+> ```
+
+The linear regression formula is as below:
+
+![Linear Regression Formula](https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTc0NjM5MDEyNTAwNTQ3NTc0/how-to-create-a-simple-linear-regression-equation.webp)
+
+A is the *y*-intercept of the graph, and B is the slope of the graph.
+
+> The value of A can be deduced from B using the formula below:
+> 
+> ```css
+> A = (Σy / n) - ((B * Σx) / n)
+> ```
+
+More information about Linear Regression can be found [here](https://owlcation.com/stem/How-to-Create-a-Simple-Linear-Regression-Equation).
+
+---
+
+
+
+---
+
 # **Reference**
 
 The link to the subtopic on w3schools.com: [AI Sciences](https://www.w3schools.com/ai/ai_sciences.asp)
