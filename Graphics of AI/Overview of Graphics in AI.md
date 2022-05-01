@@ -142,8 +142,8 @@ var yValue = [];
 
 // Generate values into array
 for(let i = 0; i <= 10; i++>){
-    xValues.push[i];
-    yValues.push[i];
+    xValues.push(i);
+    yValues.push(i);
 }
 
 // Define data
@@ -157,7 +157,7 @@ var data = [{
 var layout = [title: "Graph of y = x"];
 
 // Display using plotly
-Plotly.newplot("myPlot", data, layout);
+Plotly.newplot("myPlot", data, layout); // In HTML: <div id = "myPlot" ...></div>
 ```
 
 ### **Plotly.js**
@@ -213,6 +213,84 @@ It is the start value of the graph.
 * Start value is the *y* value of the graph when *x* = 0.
 
 It is the value of *b* in the linear graph equation *y* = *ax* + ***b***.
+
+---
+
+## **03. Scatter Plots**
+
+Scatter plot has points scattered over an area representing the relationship between two values.
+
+### **Data Collection**
+
+Collecting data is the most important part of any Artificial Intelligence projects.
+
+The most common data to collect are numbers and measurements.
+
+Often data are stored in arrats representing the relationship between values.
+
+| Item | | | | | | | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Price | 7 | 8 | 8 | 9 | 9 | 9 | 10 | 11 | 14 | 14 | 15 |
+| Size | 50 | 60 | 70 | 80 | 90 | 100 | 110 | 120 | 130 | 140 | 150 |
+
+### **Plotting Scatter Plots**
+
+```js
+var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+// Define Data
+var data = [{
+    x: xArray,
+    y: yArray,
+    mode: "markers"
+}];
+
+// Define Layout
+var layout = {
+    xaxis: {range: [40, 160], title: "Square Meters"},
+    yaxis: {ramge: [5, 16], title: "Price in Millions"},
+    title: "House Prices vs Size"
+};
+
+// Display using Plotly
+Plotly.newPlot("scatterPlot", data, layout); // In HTML: <div id = "scatterPlot" ...></div>
+```
+
+### **Plotting with Graphs (Connecting Dots)**
+
+```js
+var xArray = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+var yArray = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+// Define Data
+var data = [{
+    x: xArray,
+    y: yArray,
+    mode: "lines"
+}];
+
+// Define Layout
+var layout = {
+    xaxis: {range: [40, 160], title: "Square Meters"},
+    yaxis: {ramge: [5, 16], title: "Price in Millions"},
+    title: "House Prices vs Size"
+};
+
+// Display using Plotly
+Plotly.newPlot("graphPlot", data, layout); // In HTML: <div id = "graphPlot" ...></div>
+```
+
+### **When to Use Scatter Plot**
+
+Scatter plots are great for:
+
+* Seeing the "Big Picture"
+* Compare different values
+* Discovering potential trends
+* Discovering patterns in data
+* Discovering relationships between data
+* Discovering **Clusters** and **Correlations**
 
 ---
 
