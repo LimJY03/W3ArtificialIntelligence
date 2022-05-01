@@ -249,7 +249,7 @@ var data = [{
 // Define Layout
 var layout = {
     xaxis: {range: [40, 160], title: "Square Meters"},
-    yaxis: {ramge: [5, 16], title: "Price in Millions"},
+    yaxis: {range: [5, 16], title: "Price in Millions"},
     title: "House Prices vs Size"
 };
 
@@ -273,7 +273,7 @@ var data = [{
 // Define Layout
 var layout = {
     xaxis: {range: [40, 160], title: "Square Meters"},
-    yaxis: {ramge: [5, 16], title: "Price in Millions"},
+    yaxis: {range: [5, 16], title: "Price in Millions"},
     title: "House Prices vs Size"
 };
 
