@@ -499,15 +499,19 @@ Below are some ways to install `ml5.js`:
 
 > **INSTALL WITH `HTML`**
 > 
+> This is not recommended as the code may break as `ml5` is updated:
 > ```html
-> <!-- We do not recommend this as your code may break as we update ml5 -->
 > <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
->
-> <!-- Use the latest version (0.12.2) by adding it to the head section of your HTML document -->
+> ```
+> 
+> To use the latest version (0.12.2), add the following to the `head` section of the `HTML` document:
+> ```html
 > <script src="https://unpkg.com/ml5@0.12.2/dist/ml5.min.js" type="text/javascript"></script>
+> ```
 >
-> <!-- To use an earlier version for any reason, you can change the version number -->
-> <script src="https://unpkg.com/ml5@0.6.1/dist/ml5.min.js" type="text/javascript"></script>
+> To use an earlier version for any reason, change the `<version#>`:
+> ```html
+> <script src="https://unpkg.com/ml5@<version#>/dist/ml5.min.js" type="text/javascript"></script>
 > ```
 > 
 > More info can be found [here](https://www.npmjs.com/package/ml5).
