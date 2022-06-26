@@ -406,6 +406,53 @@ This type of learning is called **backpropagation**.
 
 ---
 
+## 04. Testing A Perceptron
+
+A Perceptron must be tested and evaluated using real values.
+
+### Test Your Library
+
+Generate new unknown points and check if your Perceptron can guess the right answers.
+
+```js
+// Test Against Unknown Data
+const counter = 500;
+for (let i = 0; i < counter; i++) {
+    let x = Math.random() * xMax;
+    let y = Math.random() * yMax;
+    let guess = ptron.activate([x, y, ptron.bias]);
+    let color = "black";
+    if (guess == 0) color = "blue";
+    plotter.plotPoint(x, y, color);
+}
+```
+
+### Count The Errors
+
+Add a counter to count the number of errors:
+
+```js
+// Test Against Unknown Data
+// ...
+let errors = 0;
+for (let i = 0; i < counter; i++) {
+    //...
+    if ((y > f(x) && guess == 0) || (y < f(x) && guess == 1)) {errors++}
+}
+```
+
+### Tune The Perceptron
+
+How can you tune the Perceptron?
+
+Here are some suggestions:
+
+* Adjust the learning rate
+* Increase the number of training data
+* Increase the number of training iterations
+
+---
+
 # **Reference**
 
 The link to the subtopic on w3schools.com: [Machine Learning in JS](https://www.w3schools.com/ai/ai_perceptrons.asp)
