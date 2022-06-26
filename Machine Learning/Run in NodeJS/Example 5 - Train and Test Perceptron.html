@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <script src = "http://localhost:3000/graph_plot.js"></script>
+    <script src = "http://localhost:3000/perceptron_lib.js"></script>
+
+    <body>
+        <canvas
+            id = "myCanvas"
+            width = "400px"
+            height = "400px"
+            style = "width: 100%; max-width: 400px; border: 1px solid black">
+        </canvas>
+        <div id = "errorDisplay"></div>
+        <script>
+            // Initialize Values
+            const numPoints = 500;
+            const learningRate = 0.00001;
+            const epochCount = 10000;
+
+            // Create a Plotter
+            const plotter = new XYPlotter("myCanvas");
+            plotter.transformXY();
+
+            // Generate Random Points
+            const xMin = plotter.xMin;
+            const xMax = plotter.xMax;
+            const yMax = plotter.yMax;
+
+            const xPoints = [];
+            const yPoints = [];
+
+            for (let i = 0; i < numPoints; i++) {
+                xPoints[i] = Math.random() * xMax;
+                yPoints[i] = Math.random() * yMax;
+            }
+
+            // Create Line Function
+            const f = (x) => x * 1.2 + 50;
+
+            // Plot Line
+            plotter.plotLine(xMin, f(xMin), xMax, f(xMax), 'black')
+
+            // Set Label
+            const label = []
+            for (let i = 0; i < numPoints; i++) {
+                label[i] = yPoints[i] > f(xPoints[i]) ? 1 : 0;
+            }
+
+            // Create Perceptron
+            const p = new Perceptron(2, learningRate);
+
+            // Train Perceptron
+            for (let j = 0; j < epochCount; j++) {
+                for (let i = 0; i < numPoints; i++) {
+                    p.train([xPoints[i], yPoints[i]], label[i]);
+                }
+            }
+
+            // Initialise Test Variables
+            const testPoints = 500
+            var error = 0
+            
+            // Display Test Result
+            for (let i = 0; i < testPoints; i++) {
+
+                let x = Math.random() * xMax;
+                let y = Math.random() * yMax;
+                let guess = p.activate([x, y, p.bias]);
+
+                let color = guess == 1 ? 'black' : 'blue';
+
+                plotter.plotPoints(1, [x], [y], color);
+
+                if ((y > f(x) && guess == 0) || (y < f(x) && guess == 1)) {error++;}
+            }
+
+            document.getElementById("errorDisplay").innerHTML = 'There are ' + error + ' errors out of ' + testPoints;
+        </script>
+    </body>
+</html>
