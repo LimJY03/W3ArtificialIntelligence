@@ -1,5 +1,5 @@
 // Define Perceptron object
-function perceptron(count, learning_rate = 0.00001) {
+function Perceptron(count, learning_rate = 0.00001) {
 
     // Set initial values
     this.learnc = learning_rate;
@@ -25,11 +25,11 @@ function perceptron(count, learning_rate = 0.00001) {
     }
 
     // Training function
-    this.train = function(inputs, desired) {
+    this.train = function(inputs, label) {
 
         inputs.push(this.bias);
         let guess = this.activate(inputs);
-        let error = desired - guess;
+        let error = label - guess;
         
         // Error present, change weight
         if (error != 0) {
