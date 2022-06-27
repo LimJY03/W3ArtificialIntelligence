@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <script src = "./graph_plot.js"></script>
+    <script src = "./learning_lib.js"></script>
+
+    <body>
+        <canvas
+            id = "myCanvas"
+            width = "400px"
+            height = "400px"
+            style = "width: 100%; max-width: 400px; border: 1px solid black">
+        </canvas>
+        <p>Train me to find the line of best fit:</p>
+        <p>
+            <button onclick = "train(100)">+ 100 times</button>
+            <button onclick = "train(200)">+ 200 times</button>
+            <button onclick = "train(300)">+ 300 times</button>
+            <button onclick = "train(500)">+ 500 times</button>
+            <button onclick = "location.reload()">Reset</button>
+        </p>
+        <div id = "metricsDisplay"></div>
+        <script>
+            // Create a Plotter Object
+            const plotter = new XYPlotter("myCanvas");
+            plotter.transformXY();
+
+            // Create a Trainer Object
+            const xPoints = [32, 53, 61, 47, 59, 55, 52, 39, 48, 52, 45, 54, 44, 58, 56, 48, 44, 60];
+            const yPoints = [31, 68, 62, 71, 87, 78, 79, 59, 75, 71, 55, 82, 62, 75, 81, 60, 82, 97];
+            const trainer = new Trainer(xPoints, yPoints);
+
+            // Plot Points
+            plotter.plotPoints(xPoints.length, xPoints.map(g = (x) => x * 4), yPoints.map(g = (x) => x * 4), 'blue')
+
+            // User Interaction Functions
+            function train(iter) {
+                trainer.train(iter);
+
+                document.getElementById("metricsDisplay").innerHTML = 
+                "<p>Slope: " + trainer.weight + "</p>" + 
+                "<p>Bias:  " + trainer.bias + "</p>" + 
+                "<p>Cost:  " + trainer.cost + "</p>";
+                
+                const x = plotter.xMax;
+                const y = plotter.xMax * trainer.weight + trainer.bias;
+
+                plotter.plotLine(0, trainer.bias, x, y, 'black');
+            }
+        </script>
+    </body>
+</html>
