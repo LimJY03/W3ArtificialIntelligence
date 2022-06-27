@@ -19,6 +19,7 @@
   "homepage": "https://github.com/LimJY03/W3ArtificialIntelligence#readme",
   "dependencies": {
     "@tensorflow/tfjs": "^3.15.0",
+    "brain.js": "^2.0.0-beta.15",
     "express": "^4.17.3",
     "mathjs": "^10.4.3"
   }
