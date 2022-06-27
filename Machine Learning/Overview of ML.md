@@ -453,6 +453,282 @@ Here are some suggestions:
 
 ---
 
+## 05. Perceptron Learning
+
+An ML model is trained by looping over data multiple times.
+
+For each iteration, the **Weight Values** are adjusted.
+
+Training is complete when the iterations fails to **Reduce the Cost**.
+
+### Gradient Descent
+
+**Gradient Descent** is a popular algorithm for solving AI problems.
+
+A simple **Linear Regression Model** can be used to demonstrate a gradient descent.
+
+The goal of a linear regression is to fit a linear graph to a set of (*x*, *y*) points. This can be solved with a math formula. But a ML algorithm can also solve this.
+
+It starts with a scatter plot and a linear model (*y* = *wx* + *b*).
+
+Then it trains the model to find a line that fits the plot. This is done by altering the weight (slope) and the bias (intercept) of the line.
+
+### A Trainer Object
+
+We will perform the following steps to create a trainer object:
+
+1. Create a trainer object that can take any number of (*x*, *y*) values in two arrays `(xArr, yArr)`.
+2. Set weight to 0, and bias to 1.
+3. A learning constant, `learnc` has to be set, and a cost variable must be defined.
+
+Below is the code for a **Trainer Object** that can solve this problem (and many other problems).
+
+```js
+function Trainer(xArray, yArray) {
+    this.xArr = xArray;
+    this.yArr = yArray;
+    this.points = this.xArr.length;
+    this.learnc = 0.00001;
+    this.weight = 0;
+    this.bias = 1;
+    this.cost;
+
+    ...
+}
+```
+
+### Cost Function
+
+A standard way to solve a regression problem, is with an "Cost Function" that measures how good the solution is.
+
+The function uses the weight and bias from the model (*y* = *wx* + *b*) and returns an error, based on how well the line fits a plot.
+
+The way to compute this error, is to loop through all (*x*, *y*) points in the plot, and sum the square distances between the *y* value of each point and the line.
+
+The most conventional way is to square the distances (to ensure positive values) and to make the error function differentiable.
+
+```js
+    this.costError = function() {
+        let total = 0;
+
+        for (let i = 0; i < this.points; i++) {
+            total += (this.yArr[i] - (this.weight * this.xArr[i] + this.bias)) ** 2;
+        }
+
+        return total / this.points;
+    }
+```
+
+The formula used in the function is actually this:
+
+![mse](https://www.w3schools.com/ai/img_linear_regression_error.jpg)
+
+* ***E*** is the error (cost)
+* ***N*** is the total number of observations (points)
+* ***y*** is the value (label) of each observation
+* ***x*** is the value (feature) of each observation
+* ***m*** is the slope (weight)
+* ***b*** is intercept (bias)
+* ***mx* + *b*** is the prediction
+
+### An Update Weights Function
+
+The train function above should update the weights and biases in each iteration.
+
+The direction to move is calculated using two partial derivatives:
+
+```js
+    this.updateWeights = function() {
+
+        let wx;             // wx = (y - (wx + b))^2 = (y - wx - b)^2
+        let w_deriv = 0;    // w_deriv = dw/d(wx)
+        let b_deriv = 0;    // b_deriv = db/d(wx)
+
+        for (let i = 0; i < this.points; i++) {
+            wx = this.yArr[i] - (this.weight * this.xArr[i] + this.bias);
+            w_deriv += -2 * this.xArr[i] * wx;
+            b_deriv += -2 * wx;
+        }
+
+        this.weight -= (w_deriv / this.points) * this.learnc;
+        this.bias -= (b_deriv / this.points) * this.learnc;
+    }
+```
+
+### The Train Function
+
+We will now run a gradient descent.
+
+The gradient descent algorithm should walk the cost function towards the best line.
+
+Each iteration should update both m and b towards a line with a lower cost (error).
+
+To do that, we add a train function that loops over all the data many times:
+
+```js
+    this.train = function(iter) {
+        for (let i = 0; i < iter; i++) {
+            this.updateWeights();
+        }
+        this.cost = this.costError();
+    }
+```
+
+---
+
+## 06. ML Terminology
+
+The key ML Terminologies are:
+
+* Relationships
+* Labels
+* Features
+* Models
+* Training
+* Inference
+
+### Relationships
+
+Machine learning systems uses **Relationships** between **Inputs** to produce **Predictions**.
+
+In algebra, a relationship is often written as *y* = *ax* + *b*:
+
+* *y* is the label we want to predict.
+* *a* is the slope of the line.
+* *x* are the input values.
+* *b* is the intercept.
+
+With ML, a relationship is written as *y* = *b* + *wx*:
+
+* *y* is the label we want to predict.
+* *w* is the weight (the slope).
+* *x* are the features (input values).
+* *b* is the intercept.
+
+### Labels
+
+In ML terminology, the label is the thing we **want to predict**. 
+
+It is the *y* of a linear relationship.
+
+### Features
+
+In ML terminology, the features are the **inputs** to the model.
+
+It is the *x* value of a linear relationship.
+
+> **Note**
+> <br>Sometimes, there can be multiple features each with different weight. For example:
+> <br>*y* = *b* + (*w1* * *x1*) + (*w2* * *x2*) + (*w3* * *x3*) + ...
+
+### Models
+
+A **Model** defines the relationship between the label (*y*) and the features (*x*).
+
+There are three phases in the life of a model:
+
+1. Data Collection
+2. Training
+3. Inference
+
+### Training
+
+The goal of training is to create a model that can answer a question, like "what is the expected price for a house?"
+
+### Inference
+
+Inference is made when the trained model is used to infer / predict values using live data, like putting the model into production.
+
+---
+
+## 07. BrainJS
+
+`brain.js` is a `JavaScript` library that makes it easy to understand **Neural Networks** because it hides the complexity of the mathematics.
+
+Below are some ways to install `brain.js`:
+
+> **INSTALL WITH `npm`**
+> 
+> ```nodejs
+> npm install brain.js
+> ```
+
+> **INSTALL WITH `html`**
+> 
+> ```html
+> <script src="//unpkg.com/brain.js"></script>
+> ```
+
+More details about `brain.js` at [here](https://brain.js.org/#/).
+
+### Building a Neural Network
+
+Building a neural network with `brain.js` is just as simple as few lines of code:
+
+```js
+// Create a Neural Network
+const network = new brain.NeuralNetwork();
+
+// Train the Network with 4 input objects
+network.train([
+    {input: [0, 0], output: {zero: 1}},
+    {input: [0, 1], output: {one: 1}},
+    {input: [1, 0], output: {one: 1}},
+    {input: [1, 1], output: {zero: 1}},
+]);
+
+// What is the expected output of [1, 0]?
+result = network.run([1, 0]);
+
+// Display the probability for "zero" and "one"
+... result["one"] + " " + result["zero"];
+```
+
+1. A **Neural Network** is created with `new brain.NeuralNetwork()`.
+2. The network is trained with `network.train([examples])`.
+3. The examples represent 4 input values with a corresponding output value.
+4. With `network.run([1,0])`, you ask "What is the likely output of [1, 0]?"
+5. The answer from the network is:
+    * one: 93% (close to 1)
+    * zero: 6% (close to 0)
+
+### Predicting Contrast
+
+With `CSS`, colors can be set by RGB:
+
+![rgb](https://media.discordapp.net/attachments/970234628214489118/990875005283860480/unknown.png)
+
+The code below demonstrates how to predict the darkness of a color:
+
+```js
+// Create a Neural Network
+const net = new brain.NeuralNetwork();
+
+// Train the Network with 4 input objects
+net.train([
+    {input: [255/255, 255/255, 255/255], output: {light: 1}},   // White (255, 255, 255)
+    {input: [192/255, 192/255, 192/255], output: {light: 1}},   // Light grey (192, 192, 192)
+    {input: [65/255, 65/255, 65/255], output: {dark: 1}},       // Dark grey (64, 64, 64)
+    {input: [0, 0, 0], output: {dark: 1}},                      // Black (0, 0, 0)
+]);
+
+// What is the expected output of Dark Blue (0, 0, 128)?
+let result = net.run([0, 0, 128/255]);
+
+// Display the probability of "dark" and "light"
+... result["dark"] + " " + result["light"];
+```
+
+1. A Neural Network is created with `new brain.NeuralNetwork()`.
+2. The network is trained with `network.train([examples])`.
+3. The examples represent 4 input values a corresponding output value.
+4. With `network.run([0, 0, 128/255])`, you ask "What is the likely output of dark blue?"
+5. The answer from the network is:
+    * Dark: 95%
+    * Light: 5%
+
+---
+
 # **Reference**
 
 The link to the subtopic on w3schools.com: [Machine Learning in JS](https://www.w3schools.com/ai/ai_perceptrons.asp)
