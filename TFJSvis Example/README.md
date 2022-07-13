@@ -13,10 +13,10 @@ Some main features of `tfjs-vis` are:
 * Visualizations can be organized in a Visor (a modal browser window).
 * It can be used with Custom Tools likes [`d3.js`](https://d3js.org/), [`Chart.js`](https://www.chartjs.org/), and [`Plotly.js`](https://plotly.com/javascript/).
 
-We will use `npm` to install `tfjs-vis` library.
+We will reference the `tfjs-vis` library in the `<script>` tag in our `HTML` file.
 
-```node
-npm install @tensorflow/tfjs-vis
+```html
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
 ```
 
 Other methods to install `tfjs-vis` library can be found [here](https://www.npmjs.com/package/@tensorflow/tfjs-vis#Installation).
@@ -63,6 +63,3 @@ The data used for this example is from a cars data set from TensorFlow JS, which
 ```
 
 In this example, we will only predict `Miles_per_hour` based on a given `Horsepower`.
-
-## Training Output
-
