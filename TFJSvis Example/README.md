@@ -1,6 +1,6 @@
 ## ML Using TFJS Example
 
-In this example, we will create a simple 
+In this example, we will create a simple ML model to make predictions.
 
 ## `tfjs-vis` Library
 
