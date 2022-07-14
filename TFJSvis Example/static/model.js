@@ -1,17 +1,32 @@
-// Select data that are needed only
-function extractData(obj) {
-    return {
-        x: obj.Horsepower, 
-        y: obj.Miles_per_Gallon
-    };
+// Data Set Informations
+const dataset = [
+    {
+        dir: './cardata.json', 
+        featureProperty: 'Horsepower', 
+        featureName: 'Horsepower',
+        labelProperty: 'Miles_per_Gallon',
+        labelName: 'MPG'
+    },
+    {
+        dir: './housedata.json', 
+        featureProperty: 'AvgAreaNumberofRooms', 
+        featureName: 'Rooms',
+        labelProperty: 'Price',
+        labelName: 'Price'
+    }
+]
+
+function run() {
+    const id = document.getElementById('choose-dataset').value;
+    runMain(dataset[id]);
 }
 
 // Plot data
-function plotData(data, surface) {
+function plotData(data, surface, xLabelName, yLabelName) {
     tfvis.render.scatterplot(
         surface,
         {values: data, series: ['Original', 'Predicted']},
-        {xLabel: 'Horsepower', yLabel: 'MPG'}
+        {xLabel: xLabelName, yLabel: yLabelName}
     );
 }
 
@@ -26,18 +41,25 @@ async function trainModel(inputs, labels, model, surface) {
 }
 
 // Main function
-async function runMain() {
+async function runMain(datasetObj) {
+
+    // Get dataset details properties
+    const dataDir = datasetObj.dir;
+    const xProp = datasetObj.featureProperty;
+    const xLabel = datasetObj.featureName;
+    const yProp = datasetObj.labelProperty;
+    const yLabel = datasetObj.labelName;
 
     // Fetch data
-    const jsonData = await fetch('./cardata.json');
+    const jsonData = await fetch(dataDir);
     let data = await jsonData.json();
-    data = data.map(extractData).filter((obj) => (obj.x != null) && (obj.y != null));
+    data = data.map((obj) => {return {x: obj[xProp], y: obj[yProp]};}).filter((obj) => (obj.x != null) && (obj.y != null));
 
     // Plot data
     const dataSurface = document.getElementById('data-surface');
     const lossSurface = document.getElementById('loss-surface');
 
-    plotData(data, dataSurface);
+    plotData(data, dataSurface, xLabel, yLabel);
 
     // Convert data into tensors
     const input = data.map(obj => obj.x);
@@ -64,7 +86,7 @@ async function runMain() {
     });
 
     // Train the model
-    await trainModel(inputNormalized, labelNormalized, model, lossSurface)
+    await trainModel(inputNormalized, labelNormalized, model, lossSurface);
 
     // Predict with the model
     let xPred = tf.linspace(0, 1, 100);
@@ -79,7 +101,5 @@ async function runMain() {
         return {x: val, y: yPred[i]};
     });
 
-    plotData([data, predictionLine], dataSurface);
+    plotData([data, predictionLine], dataSurface, xLabel, yLabel);
 }
-
-runMain();
