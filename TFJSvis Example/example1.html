@@ -6,9 +6,16 @@
 </head>
 <body>
     <h1>Visualization</h1>
+    <div>
+        Choose Data Set:
+        <select id="choose-dataset">
+            <option value="0">Car Data Set</option>
+            <option value="1">House Data Set</option>
+        </select>
+        <button onclick="run()">Predict</button>
+    </div>
     <h3>Training Data:</h3>
     <div id="data-surface"></div>
     <div id="loss-surface"></div>
     <div id="final-loss"></div>
-    </div>
 </body>
