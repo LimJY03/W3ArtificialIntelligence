@@ -59,12 +59,14 @@ Info about `HTML` canvas in `JavaScript` at [here](https://www.w3schools.com/tag
     }
 ```
 
-* `xScale` = 1: no scaling in x direction.
-* `xSkew` = 0: no skewing in x direction.
-* `ySkew` = 0: no skewing in y direction.
-* `yScale` = -1: the graph reflects at y = 0.
-* `xTranslate` = 0: no translation in x direction.
-* `yTranslate` = `this.canvas.height`: vertical translation in y direction for "height of canvas".
+| Arguments | Explanation |
+| --- | --- |
+| `xScale` = 1 | No scaling in x direction. |
+| `xSkew` = 0 | No skewing in x direction. |
+| `ySkew` = 0 | No skewing in y direction. |
+| `yScale` = -1 | The graph reflects at y = 0. |
+| `xTranslate` = 0 | No translation in x direction. |
+| `yTranslate` = `this.canvas.height` | Vertical translation in y direction for "height of canvas". |
 
 In this code, the x and y values increases rightwards and downwards.
 
@@ -115,8 +117,8 @@ More on `transform` at [The `matrix()` Method](https://www.w3schools.com/css/css
 
     // Create random XY Points
     pointCount = 500;
-    const xPoints = Array(pointCount).fill(0).map(function(){return Math.random() * myPlotter.xMax});
-    const yPoints = Array(pointCount).fill(0).map(function(){return Math.random() * myPlotter.yMax});
+    const xPoints = Array(pointCount).fill(0).map(() => Math.random() * myPlotter.xMax);
+    const yPoints = Array(pointCount).fill(0).map(() => Math.random() * myPlotter.yMax);
 
     // Plot the Points
     myPlotter.plotPoints(pointCount, xPoints, yPoints, "blue");
